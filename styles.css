@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'Reey';
-    src: url('fonts/Reey-Regular.woff2') format('woff2'),
-        url('fonts/Reey-Regular.woff') format('woff');
+    font-family: 'Cooper';
+    src: url('fonts/Cooper-Regular.woff2') format('woff2'),
+        url('fonts/Cooper-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -60,6 +60,8 @@ body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     font-family: 'Fira Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
 }
 
 img, picture, video, canvas, svg {
@@ -81,5 +83,30 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
-  font-family: 'Reey', 'Fira Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Cooper', 'Fira Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.image-sidebar {
+    background-image: url(images/wheat.jpg);
+    background-size: cover;
+    width: 800px;
+    font-size: 2.5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-sidebar-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: rgba(0, 0, 0, 60%);
+}
+
+.inline-logo {
+    width: 6rem;
 }
