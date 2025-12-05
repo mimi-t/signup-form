@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Reey';
-    src: url('Reey-Regular.woff2') format('woff2'),
-        url('Reey-Regular.woff') format('woff');
+    src: url('fonts/Reey-Regular.woff2') format('woff2'),
+        url('fonts/Reey-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -9,8 +9,8 @@
 
 @font-face {
     font-family: 'Fira Sans';
-    src: url('FiraSans-Bold.woff2') format('woff2'),
-        url('FiraSans-Bold.woff') format('woff');
+    src: url('fonts/FiraSans-Bold.woff2') format('woff2'),
+        url('fonts/FiraSans-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
@@ -18,8 +18,8 @@
 
 @font-face {
     font-family: 'Fira Sans';
-    src: url('FiraSans-BoldItalic.woff2') format('woff2'),
-        url('FiraSans-BoldItalic.woff') format('woff');
+    src: url('fonts/FiraSans-BoldItalic.woff2') format('woff2'),
+        url('fonts/FiraSans-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -27,8 +27,8 @@
 
 @font-face {
     font-family: 'Fira Sans';
-    src: url('FiraSans-Italic.woff2') format('woff2'),
-        url('FiraSans-Italic.woff') format('woff');
+    src: url('fonts/FiraSans-Italic.woff2') format('woff2'),
+        url('fonts/FiraSans-Italic.woff') format('woff');
     font-weight: normal;
     font-style: italic;
     font-display: swap;
@@ -36,8 +36,8 @@
 
 @font-face {
     font-family: 'Fira Sans';
-    src: url('FiraSans-Regular.woff2') format('woff2'),
-        url('FiraSans-Regular.woff') format('woff');
+    src: url('fonts/FiraSans-Regular.woff2') format('woff2'),
+        url('fonts/FiraSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -59,6 +59,7 @@
 body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    font-family: 'Fira Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 img, picture, video, canvas, svg {
@@ -80,4 +81,5 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
+  font-family: 'Reey', 'Fira Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
