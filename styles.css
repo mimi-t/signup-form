@@ -88,7 +88,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color: #60671a
+    color: #60671a;
+    font-weight: bold;
 }
 
 .image-sidebar {
@@ -132,15 +133,47 @@ main.signup-container > * {
     font-size: 1.6rem;
 }
 
-form#signup-form {
+#signup-form {
     background-color: white;
     width: 100%;
     box-shadow: #bdae6b 0px 2px 8px 0px;
-    padding: 3rem;
+    padding: 2rem 3rem 3rem 3rem;
+}
+
+#signup-form > .signup-instructions {
+    padding-bottom: 1rem;
+}
+
+#signup-form .form-field-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 5rem;
+}
+
+#signup-form .form-field {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 18rem;
 }
 
 #signup-form label {
     text-transform: uppercase;
+}
+
+#signup-form input {
+    outline: none;
+    border: #616161 solid 1px;
+    border-radius: 0.2rem;
+}
+
+#signup-form input:invalid {
+    border: #ff2f2f solid 1px;
+}
+
+#signup-form input:focus {
+    border: #2fa1ff solid 1px;
+    border-radius: 0.2rem;
+    box-shadow: #8b8b8b 0px 2px 8px 0px;
 }
 
 button[form="signup-form"] {
@@ -151,6 +184,6 @@ button[form="signup-form"] {
     font-size: 1.4rem;
     font-weight: bold;
     border: none;
-    border-radius: 1rem;
+    border-radius: 0.5rem;
     width: 300px;
 }
