@@ -89,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     color: #60671a;
+    text-decoration: none;
     font-weight: bold;
 }
 
@@ -99,11 +100,13 @@ a {
     font-size: 2.5rem;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .image-sidebar-content {
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -111,6 +114,16 @@ a {
     width: 100%;
     padding: 1rem 2rem;
     background-color: rgba(0, 0, 0, 60%);
+}
+
+.image-sidebar .image-credit {
+    font-size: 1rem
+}
+
+.image-sidebar .image-credit a {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: normal;
 }
 
 .inline-logo {
@@ -123,10 +136,11 @@ main.signup-container {
     justify-content: center;
     gap: 3rem;
     width: 100%;
+    padding: 6rem 0rem;
 }
 
 main.signup-container > * {
-    padding: 0rem 3rem;
+    padding: 0rem 16rem 0rem 3rem;
 }
 
 .signup-instructions {
@@ -137,7 +151,7 @@ main.signup-container > * {
     background-color: white;
     width: 100%;
     box-shadow: #bdae6b 0px 2px 8px 0px;
-    padding: 2rem 3rem 3rem 3rem;
+    padding: 2rem 16rem 3rem 3rem;
 }
 
 #signup-form > .signup-instructions {
@@ -156,17 +170,13 @@ main.signup-container > * {
     flex: 0 0 18rem;
 }
 
-#signup-form label {
-    text-transform: uppercase;
-}
-
 #signup-form input {
     outline: none;
     border: #616161 solid 1px;
     border-radius: 0.2rem;
 }
 
-#signup-form input:invalid {
+#signup-form input:user-invalid {
     border: #ff2f2f solid 1px;
 }
 
